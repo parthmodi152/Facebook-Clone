@@ -1,21 +1,20 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDH9BiSLqYSc-XECHMPd1_JHOomX9kAnt0",
-    authDomain: "facebook-527d9.firebaseapp.com",
-    databaseURL: "https://facebook-527d9.firebaseio.com",
-    projectId: "facebook-527d9",
-    storageBucket: "facebook-527d9.appspot.com",
-    messagingSenderId: "1056315857126",
-    appId: "1:1056315857126:web:24e9576a5824ad3fbc4327",
-    measurementId: "G-CNK0DMTZQQ"
-  };
+  apiKey: "AIzaSyDUsOY2uKHM085K_yCJpjadosUpeeHhILI",
+  authDomain: "facebook-rf-stack.firebaseapp.com",
+  projectId: "facebook-rf-stack",
+  storageBucket: "facebook-rf-stack.appspot.com",
+  messagingSenderId: "616803115314",
+  appId: "1:616803115314:web:7f10fe7c0a53efd4aff72b",
+  measurementId: "G-FMYP9GX55M",
+};
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 
-const auth = firebase.auth()
+const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 
-export {auth, provider};
+export { auth, provider };
 export default db;
